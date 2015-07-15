@@ -1,13 +1,13 @@
 <?php
-$dbhost = 'localhost:3036';
+$dbhost = 'localhost';
 $dbuser = 'root';
 $dbpass = 'root';
-$conn = mysql_connect($dbhost, $dbuser, $dbpass);
+$conn = mysqli_connect($dbhost, $dbuser, $dbpass);
 if(! $conn )
 {
-  die('Could not connect: ' . mysql_error());
+  die('Could not connect: ' . mysqli_error());
 }
 echo 'Connected successfully';
-mysql_select_db( 'test_db' );
-mysql_close($conn);
+mysqli_select_db( $conn, 'test_db' );
+mysqli_close($conn);
 ?>

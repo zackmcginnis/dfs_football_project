@@ -1,21 +1,22 @@
 <?php
-$dbhost = 'localhost:3036';
+$dbhost = 'localhost';
 $dbuser = 'root';
 $dbpass = 'root';
-$conn = mysql_connect($dbhost, $dbuser, $dbpass);
+$conn = mysqli_connect($dbhost, $dbuser, $dbpass);
 if(! $conn )
 {
-  die('Could not connect: ' . mysql_error());
+  die('Could not connect: ' . mysqli_error($conn));
 }
-echo 'Connected successfully';
-$sql = 'CREATE Database test_db';
-$retval = mysql_query( $sql, $conn );
+echo "Connected successfully\n";
+
+$sql = 'CREATE DATABASE test_db';
+$retval = mysqli_query($conn, $sql);
 if(! $retval )
 {
-  die('Could not create database: ' . mysql_error());
+  die('Could not create database: ' . mysqli_error($conn));
 }
 echo "Database test_db created successfully\n";
-mysql_close($conn);
+mysqli_close($conn);
 ?>
 
 
