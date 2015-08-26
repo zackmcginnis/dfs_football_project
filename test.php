@@ -14,7 +14,7 @@ if(! $retval )
 {
   die('Could not create database: ' . mysql_error());
 }
-echo "Database test_db created successfully\n";
+echo "Database test_db created successfully. Try again\n";
 mysql_close($conn);
 ?>
 
