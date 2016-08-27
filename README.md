@@ -1,8 +1,8 @@
-# dfs_advanced_projector
+## Daily Fantasy Football Projector
 
--Uses advanced projections to rank NFL players using dfs scoring on a weekly basis
--Uses a modified starter template from https://github.com/loicknuchel/ionic-starter
--Thanks to loicknuchel for providing a robust and clean template to work with
+- Uses advanced projections to rank NFL players using dfs scoring on a weekly basis
+- Uses a modified starter template from https://github.com/loicknuchel/ionic-starter
+- Thanks to loicknuchel for providing a robust and clean template to work with
 
 ## Getting started
 
