@@ -1,15 +1,6 @@
-# Ionic Starter
+# dfs_advanced_projector
 
-[![Dependency Status](https://david-dm.org/loicknuchel/ionic-starter.svg)](https://david-dm.org/loicknuchel/ionic-starter)
-[![devDependency Status](https://david-dm.org/loicknuchel/ionic-starter/dev-status.svg)](https://david-dm.org/loicknuchel/ionic-starter#info=devDependencies)
-
-This project aims to let you start a new app as fast as possible.
-
-Just clone it and you are ready to do ! Many boilerplate code is already written and most usefull libs are included. I'm trying to follow best practices with Angular & Ionic so it could be a good kick start :)
-
-Feel free to open an issue for any question or suggestion you could have.
-
-This application (mostly) follows the [John Papa's style guide](https://github.com/johnpapa/angular-styleguide).
+-Uses advanced projections to rank NFL players using dfs scoring on a weekly basis
 
 ## Getting started
 

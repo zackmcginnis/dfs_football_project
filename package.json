@@ -1,7 +1,7 @@
 {
-  "name": "ionic-starter",
+  "name": "dfs_advanced_projector",
   "version": "0.0.1",
-  "description": "Start a new ionic project in seconds !",
+  "description": "Get advanced projections for daily fantasy football",
   "dependencies": {
     "gulp": "^3.9.0",
     "gulp-sass": "^2.0.4",
