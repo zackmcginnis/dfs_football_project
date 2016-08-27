@@ -1,5 +1,5 @@
 {
-  "name": "score_projector",
+  "name": "dfs_projector",
   "app_id": "",
   "gulpStartupTasks": [
     "sass",

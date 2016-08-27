@@ -1,5 +1,5 @@
 {
-  "name": "score_projector",
+  "name": "dfs_projector",
   "private": "true",
   "devDependencies": {
     "ionic": "driftyco/ionic-bower#1.2.0",

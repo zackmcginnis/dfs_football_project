@@ -1,8 +1,8 @@
-## Score predictor for NCAA football
+## Daily Fantasy Football Projector
 
-- Gives predicted score total (both teams combined)
-- Utilizes stats relating to: points scored/game, points allowed/game, yards per play, yards per play allowed, offensive pace, offensive pace against, etc
-- Compares with Vegas projected game total
+- Gives projected points scored (and value) of each nfl player
+- Prices are obtained from Draft Kings
+- Projections are based off of various anvanced statistics
 - Uses a modified starter template from https://github.com/loicknuchel/ionic-starter
 - Thanks to loicknuchel for providing a robust and clean template to work with
 
