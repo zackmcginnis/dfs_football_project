@@ -1,43 +1,21 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
 
-# Folder config file
-Desktop.ini
+# Editor files
+/.idea/
+/.brackets.json
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+# Cordova folders
+node_modules/
+platforms/
+plugins/
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+# when use sass, do not commit css files
+/www/css/
+/www/lib/
 
-# Windows shortcuts
-*.lnk
+# do not commit generated images
+/resources/android/
+/resources/ios/
 
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+*~
