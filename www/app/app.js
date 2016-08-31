@@ -22,21 +22,57 @@
       templateUrl: 'app/layout/layout.html',
       controller: 'LayoutCtrl'
     })
-    .state('app.twitts', {
-      url: '/twitts',
+    .state('app.main', {
+      url: '/main',
       views: {
         'menuContent': {
-          templateUrl: 'app/twitts/twitts.html',
-          controller: 'TwittsCtrl'
+          templateUrl: 'app/main/main.html',
+          controller: 'MainCtrl'
         }
       }
     })
-    .state('app.twitt', {
-      url: '/twitts/:id',
+    .state('app.qb', {
+      url: '/main/:id',
       views: {
         'menuContent': {
-          templateUrl: 'app/twitts/twitt.html',
-          controller: 'TwittCtrl'
+          templateUrl: 'app/main/qb.html',
+          controller: 'QbCtrl'
+        }
+      }
+    })
+    .state('app.wr', {
+      url: '/main/:id',
+      views: {
+        'menuContent': {
+          templateUrl: 'app/main/wr.html',
+          controller: 'WrCtrl'
+        }
+      }
+    })
+    .state('app.rb', {
+      url: '/main/:id',
+      views: {
+        'menuContent': {
+          templateUrl: 'app/main/rb.html',
+          controller: 'RbCtrl'
+        }
+      }
+    })
+    .state('app.te', {
+      url: '/main/:id',
+      views: {
+        'menuContent': {
+          templateUrl: 'app/main/te.html',
+          controller: 'TeCtrl'
+        }
+      }
+    })
+    .state('app.def', {
+      url: '/main/:id',
+      views: {
+        'menuContent': {
+          templateUrl: 'app/main/def.html',
+          controller: 'DefCtrl'
         }
       }
     })

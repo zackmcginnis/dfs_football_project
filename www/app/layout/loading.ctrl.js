@@ -10,7 +10,7 @@
     });
     Storage.getUser().then(function(user){
       if(user){
-        $state.go('app.twitts');
+        $state.go('app.main');
       } else {
         $state.go('login');
       }

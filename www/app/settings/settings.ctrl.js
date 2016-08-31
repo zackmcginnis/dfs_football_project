@@ -13,7 +13,7 @@
     $scope.$watch('data.settings', function(settings, oldSettings){
       if(settings && oldSettings && !angular.equals(settings, oldSettings)){
         Storage.setUserSettings(settings).then(function(){
-          UiUtils.showToast('Paramètres enregistrés');
+          UiUtils.showToast('saved settings');
         });
       }
     }, true);

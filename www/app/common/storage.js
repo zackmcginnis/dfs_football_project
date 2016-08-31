@@ -9,7 +9,7 @@
     var keys = {
       user: 'user',
       userSettings: 'user-settings',
-      twitts: 'twitts'
+      main: 'main'
     };
     return {
       // user
@@ -18,9 +18,13 @@
       getUserSettings: getUserSettings,
       setUserSettings: setUserSettings,
       // twitts
-      getTwitt: getTwitt,
-      getTwitts: getTwitts,
-      setTwitts: setTwitts,
+      getQb: getQb,
+      getRb: getRb,
+      getWr: getWr,
+      getTe: getTe,
+      getDef: getDef,
+      getMain: getMain,
+      setMain: setMain,
       // global
       clear: clear
     };
@@ -44,18 +48,42 @@
       return _StorageUtils.set(keys.userSettings, settings);
     }
 
-    function getTwitt(id){
-      return getTwitts().then(function(twitts){
-        return _.find(twitts, {id: id});
+    function getQb(id){
+      return getMain().then(function(main){
+        return _.find(main, {id: id});
       });
     }
 
-    function getTwitts(){
-      return _StorageUtils.get(keys.twitts);
+    function getWr(id){
+      return getMain().then(function(main){
+        return _.find(main, {id: id});
+      });
     }
 
-    function setTwitts(twitts){
-      return _StorageUtils.set(keys.twitts, twitts);
+    function getRb(id){
+      return getMain().then(function(main){
+        return _.find(main, {id: id});
+      });
+    }
+
+    function getTe(id){
+      return getMain().then(function(main){
+        return _.find(main, {id: id});
+      });
+    }
+
+    function getDef(id){
+      return getMain().then(function(main){
+        return _.find(main, {id: id});
+      });
+    }
+
+    function getMain(){
+      return _StorageUtils.get(keys.main);
+    }
+
+    function setMain(main){
+      return _StorageUtils.set(keys.main, main);
     }
 
     function clear(){

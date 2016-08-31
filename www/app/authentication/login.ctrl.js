@@ -16,7 +16,7 @@
     fn.login = function(credentials){
       if(credentials.login){
         Storage.setUser({login: credentials.login}).then(function(){
-          $state.go('app.twitts');
+          $state.go('app.main');
         });
       }
     };
