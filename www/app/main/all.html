@@ -1,9 +1,26 @@
 <ion-view title="All">
   <ion-content>
 
-        <div ng-repeat="player in data.main">
-        <p>{{player.Position}} {{player.Name}} {{player.Salary}}</p>
-        </div>
+<table ng-controller="AllCtrl" border="1">
+  <tr>
+    <th>Position</th>
+    <th>Name</th>
+    <th>Team</th>
+    <th>Opponent</th>
+    <th>Salary</th>
+    <th>Projected Points</th>
+    <th>Value</th>
+  </tr>
+    <tr ng-repeat="player in data.main">
+    	<td>{{player.Position}}</td> 
+        <td>{{player.Name}}</td>
+        <td>{{player.teamAbbrev}}</td>
+        <td>{{player.Opponent}}</td>
+        <td>{{player.Salary}}</td>  
+        <td>{{player.Projection}}</td>
+        <td>{{player.Value}}</td> 
+    </tr>
+</table>
   
   </ion-content>
 </ion-view>

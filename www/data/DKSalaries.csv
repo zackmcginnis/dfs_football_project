@@ -239,7 +239,7 @@ RB,Reggie Bush,3500,Buf@Bal 01:00PM ET,1.74,Buf
 WR,James Jones,3500,SD@KC 01:00PM ET,11.95,SD
 TE,Benjamin Watson,3500,Buf@Bal 01:00PM ET,12.344,Bal
 WR,Jermaine Kearse,3500,Mia@Sea 04:05PM ET,10.683,Sea
-RB,Ka'Deem Carey,3500,Chi@Hou 01:00PM ET,3.436,Chi
+RB,Ka''Deem Carey',3500,Chi@Hou 01:00PM ET,3.436,Chi
 WR,Rashad Greene,3500,GB@Jax 01:00PM ET,5.144,Jax
 RB,Josh Ferguson,3500,Det@Ind 04:25PM ET,0,Ind
 RB,Terrell Watson,3500,Cle@Phi 01:00PM ET,0,Cle
@@ -427,7 +427,7 @@ WR,Kaelin Clay,3000,Buf@Bal 01:00PM ET,0.857,Bal
 WR,Antwan Goodley,3000,Mia@Sea 04:05PM ET,0,Sea
 WR,Matt Hazel,3000,Mia@Sea 04:05PM ET,0,Mia
 WR,Keith Mumphery,3000,Chi@Hou 01:00PM ET,1.582,Hou
-WR,Da'Ron Brown,3000,SD@KC 01:00PM ET,0,KC
+WR,Da''Ron Brown',3000,SD@KC 01:00PM ET,0,KC
 WR,Kevin Smith,3000,Mia@Sea 04:05PM ET,1.267,Sea
 WR,Corey Fuller,3000,Det@Ind 04:25PM ET,0.883,Det
 WR,Jake Kumerow,3000,Cin@NYJ 01:00PM ET,0,Cin
@@ -500,7 +500,7 @@ WR,Chuck Jacobs,3000,Buf@Bal 01:00PM ET,0,Bal
 WR,Jeremy Butler,3000,Buf@Bal 01:00PM ET,8.413,Bal
 RB,Daniel Lasco,3000,Oak@NO 01:00PM ET,0,NO
 RB,Tra Carson,3000,Cin@NYJ 01:00PM ET,0,Cin
-WR,De'Anthony Thomas,3000,SD@KC 01:00PM ET,4.54,KC
+WR,De''Anthony Thomas',3000,SD@KC 01:00PM ET,4.54,KC
 RB,Bishop Sankey,3000,Min@Ten 01:00PM ET,4.477,Ten
 RB,Taniela Tupou,3000,Mia@Sea 04:05PM ET,0,Sea
 WR,Kasen Williams,3000,Mia@Sea 04:05PM ET,0.575,Sea
@@ -614,7 +614,7 @@ WR,Donteea Dye,3000,TB@Atl 01:00PM ET,3.02,TB
 WR,Ben Roberts,3000,Min@Ten 01:00PM ET,0,Ten
 WR,Anthony Dable,3000,NYG@Dal 04:25PM ET,0,NYG
 WR,Moritz Boehringer,3000,Min@Ten 01:00PM ET,0,Min
-RB,Cedric O'Neal,3000,Cle@Phi 01:00PM ET,0,Phi
+RB,Cedric O''Neal',3000,Cle@Phi 01:00PM ET,0,Phi
 WR,Wendall Williams,3000,Chi@Hou 01:00PM ET,0,Hou
 RB,Alstevis Squirewell,3000,GB@Jax 01:00PM ET,0,GB
 RB,C.J. Ham,3000,Min@Ten 01:00PM ET,0,Min
@@ -705,7 +705,7 @@ TE,Trey Burton,2500,Cle@Phi 01:00PM ET,0.525,Phi
 TE,Gerald Christian,2500,NE@Ari 08:30PM ET,0,Ari
 TE,A.J. Derby,2500,NE@Ari 08:30PM ET,0,NE
 TE,Erik Swoope,2500,Det@Ind 04:25PM ET,0,Ind
-TE,James O'Shaughnessy,2500,SD@KC 01:00PM ET,2.1,KC
+TE,James O''Shaughnessy',2500,SD@KC 01:00PM ET,2.1,KC
 TE,Colton Underwood,2500,Oak@NO 01:00PM ET,0,Oak
 TE,MyCole Pruitt,2500,Min@Ten 01:00PM ET,1.359,Min
 TE,Tyler Ott,2500,NYG@Dal 04:25PM ET,0,NYG
@@ -731,7 +731,7 @@ TE,Ryan Malleck,2500,NYG@Dal 04:25PM ET,0,NYG
 TE,Ross Travis,2500,SD@KC 01:00PM ET,0,KC
 TE,Demetrius Harris,2500,SD@KC 01:00PM ET,1.244,KC
 TE,Mitchell Henry,2500,GB@Jax 01:00PM ET,0,GB
-TE,Nick O'Leary,2500,Buf@Bal 01:00PM ET,1.175,Buf
+TE,Nick O''Leary',2500,Buf@Bal 01:00PM ET,1.175,Buf
 TE,Matt LaCosse,2500,NYG@Dal 04:25PM ET,2.6,NYG
 TE,Nick Vannett,2500,Mia@Sea 04:05PM ET,0,Sea
 TE,Austin Traylor,2500,NYG@Dal 04:25PM ET,0,Dal
@@ -756,7 +756,7 @@ TE,Gabe Hughes,2500,Mia@Sea 04:05PM ET,0,Mia
 TE,Wes Saxton,2500,Cin@NYJ 01:00PM ET,0,NYJ
 TE,Dominique Jones,2500,Mia@Sea 04:05PM ET,0,Mia
 TE,Ben Braunecker,2500,Chi@Hou 01:00PM ET,0,Chi
-TE,Ryan O'Malley,2500,Oak@NO 01:00PM ET,0,Oak
+TE,Ryan O''Malley',2500,Oak@NO 01:00PM ET,0,Oak
 TE,Clayton Echard,2500,Mia@Sea 04:05PM ET,0,Sea
 TE,Hakeem Valles,2500,NE@Ari 08:30PM ET,0,Ari
 TE,John DePalma,2500,Cle@Phi 01:00PM ET,0,Phi

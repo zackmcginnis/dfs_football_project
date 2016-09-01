@@ -13,6 +13,8 @@
         $scope.data.main = main;
         Backend.getMain().then(function(main){
           $scope.data.main = main;
+          $scope.data.main = Backend.addTeam($scope.data.main);
+
           //console.log("getmain", data.main);
         });
       });
