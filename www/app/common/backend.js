@@ -18,17 +18,34 @@
       var obj = [];
       //var headers=lines[0].split(",");
       //for(var i=1;i<lines.length;i++){
+      var gameinfo = "";
+      var team = "";
+      var opp = "";
+
       angular.forEach(lines, function(val) {
       var o = val.split(',');
-      obj.push({ //Position,Name,Salary,GameInfo,AvgPointsPerGame,teamAbbrev
-        Position: o[0],
-        Name: o[1],
-        Salary: o[2],
-        GameInfo: o[3],
-        AvgPointsPerGame: o[4],
-        teamAbbrev: o[5]
-      });
-       
+      gameinfo = o[3];
+      team = o[5];
+
+      var regex = new RegExp(team);
+      //console.log(regex);
+      //opp = str.replace(regex, "other");
+
+      console.log(regex);
+
+      //opp = gameinfo.replace(regex, "poop");
+      opp = gameinfo.replace(/@|0|1|2|3|4|5|6|7|8|9|PM|AM|:|ET|PT|MT|CT/g, "");
+      opp = opp.replace(regex);
+      console.log(opp);
+
+        obj.push({ //Position,Name,Salary,GameInfo,AvgPointsPerGame,teamAbbrev
+          Position: o[0],
+          Name: o[1],
+          Salary: o[2],
+          GameInfo: o[3],
+          AvgPointsPerGame: o[4],
+          teamAbbrev: o[5]
+        });
       });
 
       return obj; //JavaScript object
