@@ -9,11 +9,39 @@
   <ion-content class="has-subheader">
     <div ng-if="data.main.length === 0" class="empty-msg">Nothing</div>
     <div ng-if="data.main.length > 0" class="list">
+      <!--
       <a class="item item-avatar" ng-repeat="pos in data.filteredPositions = (data.main | filter:search) track by pos.id" ui-sref="app.pos({id: pos.id})">
-        <img ng-src="{{pos.avatar}}">
-        <h2>{{pos.user}}</h2>
-        <p>{{pos.content}}</p>
-      </a>
+      "\"Position\""
+-->
+
+     <div ui-sref="app.all({id: pos.id})">All
+
+    </div>
+
+     <div ui-sref="app.qb({id: pos.id})">Quarterbacks
+
+    </div>
+
+     <div ui-sref="app.rb({id: pos.id})">Running Backs
+
+    </div>
+
+     <div ui-sref="app.wr({id: pos.id})">Wide Receivers
+
+    </div>
+
+     <div ui-sref="app.te({id: pos.id})">Tight Ends
+
+    </div>
+
+     <div ui-sref="app.def({id: pos.id})">Defense
+
+    </div>   
+
+        <!--<img ng-src="{{pos.avatar}}"> 
+        <h2>{{players.Name}}</h2>
+        <p>{{players.Position}}</p>
+        -->
     </div>
   </ion-content>
 </ion-view>

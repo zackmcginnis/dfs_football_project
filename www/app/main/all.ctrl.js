@@ -1,14 +1,14 @@
 (function(){
   'use strict';
   angular.module('app')
-    .controller('MainCtrl', MainCtrl);
+    .controller('AllCtrl', AllCtrl);
 
-  function MainCtrl($scope, Storage, Backend){
+  function AllCtrl($scope, $stateParams, Storage, Backend){
     var data = {}, fn = {};
     $scope.data = data;
     $scope.fn = fn;
 
-    $scope.$on('$ionicView.enter', function(){
+
       Storage.getMain().then(function(main){
         $scope.data.main = main;
         Backend.getMain().then(function(main){
@@ -16,6 +16,10 @@
           //console.log("getmain", data.main);
         });
       });
-    });
+
+    //Storage.getAll($stateParams.id).then(function(all){
+     // $scope.data.all = all;
+      //console.log("show all", all);
+    //});
   }
 })();

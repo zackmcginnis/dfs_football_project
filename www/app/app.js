@@ -31,6 +31,15 @@
         }
       }
     })
+    .state('app.all', {
+      url: '/main/:id',
+      views: {
+        'menuContent': {
+          templateUrl: 'app/main/all.html',
+          controller: 'AllCtrl'
+        }
+      }
+    })
     .state('app.qb', {
       url: '/main/:id',
       views: {

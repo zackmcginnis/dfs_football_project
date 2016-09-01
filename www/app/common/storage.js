@@ -18,6 +18,7 @@
       getUserSettings: getUserSettings,
       setUserSettings: setUserSettings,
       // twitts
+      getAll: getAll,
       getQb: getQb,
       getRb: getRb,
       getWr: getWr,
@@ -46,6 +47,12 @@
 
     function setUserSettings(settings){
       return _StorageUtils.set(keys.userSettings, settings);
+    }
+
+    function getAll(id){
+      return getMain().then(function(main){
+        return _.find(main, {id: id});
+      });
     }
 
     function getQb(id){
