@@ -26,6 +26,11 @@
       getDef: getDef,
       getMain: getMain,
       setMain: setMain,
+      setQb: setQb,
+      setRb: setRb,
+      setWr: setWr,
+      setTe: setTe,
+      setDef: setDef,
       // global
       clear: clear
     };
@@ -91,6 +96,26 @@
 
     function setMain(main){
       return _StorageUtils.set(keys.main, main);
+    }
+
+    function setQb(qb){
+      return _StorageUtils.set(keys.qb, qb);
+    }
+
+    function setWr(wr){
+      return _StorageUtils.set(keys.wr, wr);
+    }
+
+    function setRb(rb){
+      return _StorageUtils.set(keys.rb, rb);
+    }
+
+    function setTe(te){
+      return _StorageUtils.set(keys.te, te);
+    }
+
+    function setDef(def){
+      return _StorageUtils.set(keys.def, def);
     }
 
     function clear(){

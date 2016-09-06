@@ -9,6 +9,8 @@
     $scope.fn = fn;
 
     $scope.$on('$ionicView.enter', function(){
+
+      /*
       Storage.getMain().then(function(main){
         $scope.data.main = main;
         Backend.getMain().then(function(main){
@@ -16,6 +18,8 @@
           //console.log("getmain", data.main);
         });
       });
+
+*/
     });
   }
 })();

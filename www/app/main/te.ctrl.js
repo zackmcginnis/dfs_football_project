@@ -3,13 +3,16 @@
   angular.module('app')
     .controller('TeCtrl', TeCtrl);
 
-  function TeCtrl($scope, $stateParams, Storage){
+  function TeCtrl($scope, $stateParams, Storage, Backend){
     var data = {}, fn = {};
     $scope.data = data;
     $scope.fn = fn;
 
-    Storage.getTe($stateParams.id).then(function(te){
-      data.te = te;
-    });
-  }
+      Storage.getTe().then(function(te){
+        $scope.data.te = te;
+        Backend.getTe().then(function(te){
+          $scope.data.te = te;
+  })
+  })
+   } 
 })();

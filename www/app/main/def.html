@@ -1,11 +1,55 @@
-<ion-view title="Defense">
+<ion-view title="Defense/ST">
   <ion-content>
-    <div class="list card">
-      <div class="item item-avatar">
-        <img ng-src="{{data.def.avatar}}">
-        <h2>{{data.def.user}}</h2>
-        <p>{{data.def.content}}</p>
-      </div>
+<div ng-controller="DefCtrl">
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="table-responsive">
+        <table summary="This table shows how to create responsive tables using Bootstrap's default functionality" class="table table-bordered table-hover">
+          <thead>
+            <tr>
+              <th>Player</th>
+              <th>Kickoff</th>
+              <th>Opponent</th>
+              <th>Spread</th>
+              <th>Over/Under</th>
+              <th>Predicted Score</th>
+             
+              <th>Projected Rank</th>
+              <th>Salary Rank</th>
+              <th>Difference</th>
+              <th>Projected Points</th>
+              <th>Salary</th>
+              <th>Cost Per Point</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="player in data.def">
+              <td>{{player.Player}}</td>
+              <td>{{player.Kickoff}}</td>
+              <td>{{player.Opponent}}</td>
+              <td>{{player.Spread}}</td>
+              <td>{{player.OverUnder}}</td>
+              <td>{{player.PredictedScore}}</td>  
+        
+              <td>{{player.ProjectedRank}}</td>
+              <td>{{player.SalaryRank}}</td>
+              <td>{{player.Difference}}</td>
+              <td>{{player.ProjectedPoints}}</td>
+              <td>{{player.Salary}}</td>
+              <td>{{player.CostPerPoint}}</td>          
+            </tr>
+          </tbody>       
+          <tfoot>
+            <tr>
+          
+            </tr>
+          </tfoot>
+        </table>
+      </div><!--end of .table-responsive-->
     </div>
+  </div>
+</div>
+</div>
   </ion-content>
 </ion-view>
