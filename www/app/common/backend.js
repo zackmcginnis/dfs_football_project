@@ -5,13 +5,17 @@
 
   function Backend($http, Storage, C){
     return {
-      getMain: getMain, //get DK csv
       csvToJson: csvToJson, //convert csv to javascript object
       getQb: getQb,
       getWr: getWr,
       getRb: getRb,
       getTe: getTe,
-      getDef: getDef
+      getDef: getDef,
+      getZacksQbProjection: getZacksQbProjection,
+      getZacksRbProjection: getZacksRbProjection,
+      getZacksWrProjection: getZacksWrProjection,
+      getZacksTeProjection: getZacksTeProjection,
+      getZacksDefProjection: getZacksDefProjection
     };
 
     function csvToJson(csv){
@@ -45,22 +49,21 @@
       //return JSON.stringify(result); //JSON
     };
 
-    function getMain(){ //from DK csv
-      return $http.get(C.backendUrl+'/DKSalaries.csv').then(function(res){
-        var all = csvToJson(res);
-        console.log("all", all);
-        return Storage.setMain(all).then(function(){
-          return all;
-        });
-      });
-    }
-
     function getQb(){ //from DK csv
       return $http.get(C.backendUrl+'/dkqb.csv').then(function(res){
-        var qbs = csvToJson(res);
-        console.log("qbs", qbs);
-        return Storage.setQb(qbs).then(function(){
-          return qbs;
+        var all = csvToJson(res);
+        var predict;
+        for (var i=0; i < all.length; i++){
+          all[i].Position = "QB";
+          predict = all[i].PredictedScore;
+          if (predict !== undefined)
+          predict = predict.replace(/0|1|2|3|4|5|6|7|8|9| /g, "");
+          all[i].Team = predict;
+          all[i].ZacksProjection = getZacksQbProjection(all[i]);
+        }
+        console.log("qbs", all);
+        return Storage.setQb(all).then(function(){
+          return all;
         });
       });
     }
@@ -68,7 +71,16 @@
     function getWr(){ //from DK csv
       return $http.get(C.backendUrl+'/dkwr.csv').then(function(res){
         var all = csvToJson(res);
-        console.log("all", all);
+        var predict;
+        for (var i=0; i < all.length; i++){
+          all[i].Position = "WR";
+          predict = all[i].PredictedScore;
+          if (predict !== undefined)
+          predict = predict.replace(/0|1|2|3|4|5|6|7|8|9| /g, "");
+          all[i].Team = predict;
+          all[i].ZacksProjection = getZacksWrProjection(all[i]);
+        }
+        console.log("wr", all);
         return Storage.setWr(all).then(function(){
           return all;
         });
@@ -78,7 +90,16 @@
     function getRb(){ //from DK csv
       return $http.get(C.backendUrl+'/dkrb.csv').then(function(res){
         var all = csvToJson(res);
-        console.log("all", all);
+        var predict;
+        for (var i=0; i < all.length; i++){
+          all[i].Position = "RB";
+          predict = all[i].PredictedScore;
+          if (predict !== undefined)
+          predict = predict.replace(/0|1|2|3|4|5|6|7|8|9| /g, "");
+          all[i].Team = predict;
+          all[i].ZacksProjection = getZacksRbProjection(all[i]);
+        }
+        console.log("rb", all);
         return Storage.setRb(all).then(function(){
           return all;
         });
@@ -88,7 +109,16 @@
     function getTe(){ //from DK csv
       return $http.get(C.backendUrl+'/dkte.csv').then(function(res){
         var all = csvToJson(res);
-        console.log("all", all);
+        var predict;
+        for (var i=0; i < all.length; i++){
+          all[i].Position = "TE";
+          predict = all[i].PredictedScore;
+          if (predict !== undefined)
+          predict = predict.replace(/0|1|2|3|4|5|6|7|8|9| /g, "");
+          all[i].Team = predict;
+          all[i].ZacksProjection = getZacksTeProjection(all[i]);
+        }        
+        console.log("te", all);
         return Storage.setTe(all).then(function(){
           return all;
         });
@@ -98,22 +128,55 @@
     function getDef(){ //from DK csv
       return $http.get(C.backendUrl+'/dkdef.csv').then(function(res){
         var all = csvToJson(res);
-        console.log("all", all);
+        var predict;
+        for (var i=0; i < all.length; i++){
+          all[i].Position = "DEF";
+          predict = all[i].PredictedScore;
+          if (predict !== undefined)
+          predict = predict.replace(/0|1|2|3|4|5|6|7|8|9| /g, "");
+          all[i].Team = predict;
+          all[i].ZacksProjection = getZacksDefProjection(all[i]);
+        }
+        console.log("def", all);
         return Storage.setDef(all).then(function(){
           return all;
         });
       });
     }
 
-    function addTeam(list){
-      //var teamAbbrev = "teamAbbrev";
-      for (var i=0; i < list.length; i++){
-        var member = {};
-        var member = list[i];
-        //var member.teamAbbrev = member[teamAbbrev]; // = list[i]."teamAbbrev";
-        //console.log(member["teamAbbrev"]);
+    function getZacksQbProjection(player){
+      if (player){
       }
-      return list;
+      var zacksprojection = 0;
+      return zacksprojection;
+    };
+
+    function getZacksRbProjection(player){
+      if (player){
+      }
+      var zacksprojection = 0;
+      return zacksprojection;
+    };
+
+    function getZacksWrProjection(player){
+      if (player){
+      }
+      var zacksprojection = 0;
+      return zacksprojection;
+    };
+
+    function getZacksTeProjection(player){
+      if (player){
+      }
+      var zacksprojection = 0;
+      return zacksprojection;
+    };
+
+    function getZacksDefProjection(player){
+      if (player){
+      }
+      var zacksprojection = 0;
+      return zacksprojection;
     };
 
   }
