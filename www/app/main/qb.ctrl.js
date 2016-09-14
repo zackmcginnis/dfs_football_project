@@ -7,6 +7,8 @@
     var data = {}, fn = {};
     $scope.data = data;
     $scope.fn = fn;
+    $scope.orderByField = 'Salary';
+    $scope.reverseSort = true;
 
       Storage.getQb().then(function(qb){
         $scope.data.qb = qb;

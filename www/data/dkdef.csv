@@ -1,27 +1,33 @@
 Player 	 Kickoff 	 Opponent 	 Spread 	 Over/Under 	 Predicted Score 	 Weather 	 Projected Rank 	 Salary Rank 	 Difference 	 Projected Points 	 Salary 	 CPP 
-Seattle Seahawks (SEA - DST)	Sun 4:05PM	MIA	SEA (-10.5)	44	SEA 27		1	1	0	14.96	$3,900	$261
-Arizona Cardinals (ARI - DST)	Sun 8:30PM	NE	ARI (-6)	47.5	ARI 27		2	3	1	14.49	$3,500	$242
-Kansas City Chiefs (KC - DST)	Sun 1:00PM	SD	KC (-7)	44.5	KC 26		4	2	-2	14.06	$3,600	$256
-Houston Texans (HOU - DST)	Sun 1:00PM	CHI	HOU (-6.5)	44	HOU 25		3	6	3	14.06	$3,200	$228
-Cincinnati Bengals (CIN - DST)	Sun 1:00PM	@NYJ	CIN (-2.5)	41.5	CIN 22		5	8	3	13.98	$3,000	$215
-Minnesota Vikings (MIN - DST)	Sun 1:00PM	@TEN	MIN (-2)	41	MIN 22		6	7	1	13.98	$3,100	$222
-New England Patriots (NE - DST)	Sun 8:30PM	@ARI	NE (+6)	47.5	NE 21		7	10	3	13.96	$2,900	$208
-New York Jets (NYJ - DST)	Sun 1:00PM	CIN	NYJ (+2.5)	41.5	NYJ 20		8	4	-4	13.87	$3,400	$245
-Philadelphia Eagles (PHI - DST)	Sun 1:00PM	CLE	PHI (-4)	41	PHI 23		9	5	-4	13.87	$3,300	$238
-Green Bay Packers (GB - DST)	Sun 1:00PM	@JAC	GB (-4.5)	48	GB 26		10	12	2	13.86	$2,800	$202
-Buffalo Bills (BUF - DST)	Sun 1:00PM	@BAL	BUF (+3)	44.5	BUF 21		11	9	-2	13.83	$2,900	$210
-Baltimore Ravens (BAL - DST)	Sun 1:00PM	BUF	BAL (-3)	44.5	BAL 24		12	15	3	13.65	$2,700	$198
-Oakland Raiders (OAK - DST)	Sun 1:00PM	@NO	OAK (+1)	51	OAK 25		13	22	9	13.63	$2,400	$176
-Jacksonville Jaguars (JAC - DST)	Sun 1:00PM	GB	JAC (+4.5)	48	JAC 22		14	23	9	13.58	$2,400	$177
-Miami Dolphins (MIA - DST)	Sun 4:05PM	@SEA	MIA (+10.5)	44	MIA 17		15	26	11	13.56	$2,200	$162
-Detroit Lions (DET - DST)	Sun 4:25PM	@IND	DET (+3.5)	51.5	DET 24		16	20	4	13.51	$2,500	$185
-Tennessee Titans (TEN - DST)	Sun 1:00PM	MIN	TEN (+2)	41	TEN 20		17	16	-1	13.32	$2,600	$195
-Cleveland Browns (CLE - DST)	Sun 1:00PM	@PHI	CLE (+4)	41	CLE 19		18	24	6	12.35	$2,300	$186
-New York Giants (NYG - DST)	Sun 4:25PM	@DAL	Even	46	NYG 23		19	14	-5	12.15	$2,700	$222
-Chicago Bears (CHI - DST)	Sun 1:00PM	@HOU	CHI (+6.5)	44	CHI 19		20	18	-2	11.83	$2,500	$211
-Tampa Bay Buccaneers (TB - DST)	Sun 1:00PM	@ATL	TB (+3)	47.5	TB 22		21	17	-4	11.73	$2,600	$222
-Atlanta Falcons (ATL - DST)	Sun 1:00PM	TB	ATL (-3)	47.5	ATL 25		22	11	-11	11.59	$2,800	$242
-San Diego Chargers (SD - DST)	Sun 1:00PM	@KC	SD (+7)	44.5	SD 19		23	21	-2	11.53	$2,500	$217
-Dallas Cowboys (DAL - DST)	Sun 4:25PM	NYG	Even	46	DAL 23		24	19	-5	11.52	$2,500	$217
-Indianapolis Colts (IND - DST)	Sun 4:25PM	DET	IND (-3.5)	51.5	IND 28		25	13	-12	11.31	$2,700	$239
-New Orleans Saints (NO - DST)	Sun 1:00PM	OAK	NO (-1)	51	NO 26		26	25	-1	11.13	$2,300	$207
+Washington Redskins (WAS - DST)	Sun 1:00PM	DAL	Even	N/A	WAS 0		22	19	-3	0	$2,800	$0
+Green Bay Packers (GB - DST)	Sun 8:30PM	@MIN	GB (-2.5)	44.5	GB 24		23	10	-13	0	$3,200	$0
+Denver Broncos (DEN - DST)	Sun 4:25PM	IND	DEN (-6)	45	DEN 26		24	3	-21	0	$3,600	$0
+Indianapolis Colts (IND - DST)	Sun 4:25PM	@DEN	IND (+6)	45	IND 20		21	20	-1	0	$2,700	$0
+Oakland Raiders (OAK - DST)	Sun 4:25PM	ATL	OAK (-4.5)	49	OAK 27		20	21	1	0	$2,700	$0
+Cincinnati Bengals (CIN - DST)	Sun 1:00PM	@PIT	Even	N/A	CIN 0		18	17	-1	0	$2,800	$0
+Detroit Lions (DET - DST)	Sun 1:00PM	TEN	DET (-5.5)	47	DET 26		19	18	-1	0	$2,800	$0
+Arizona Cardinals (ARI - DST)	Sun 4:05PM	TB	ARI (-6.5)	50	ARI 28		25	4	-21	0	$3,500	$0
+Seattle Seahawks (SEA - DST)	Sun 4:05PM	@LA	Even	N/A	SEA 0		26	2	-24	0	$3,800	$0
+Minnesota Vikings (MIN - DST)	Sun 8:30PM	GB	MIN (+2.5)	44.5	MIN 21		31	6	-25	0	$3,400	$0
+Carolina Panthers (CAR - DST)	Sun 1:00PM	SF	Even	N/A	CAR 0		32	1	-31	0	$3,900	$0
+Houston Texans (HOU - DST)	Sun 1:00PM	KC	HOU (-2)	43.5	HOU 23		30	5	-25	0	$3,400	$0
+Los Angeles Rams (LA - DST)	Sun 4:05PM	SEA	Even	N/A	LA 0		29	7	-22	0	$3,300	$0
+New York Jets (NYJ - DST)	Thu 8:25PM	@BUF	Even	40	NYJ 20		27	8	-19	0	$3,300	$0
+Philadelphia Eagles (PHI - DST)	Mon 8:30PM	@CHI	PHI (+3)	42.5	PHI 20		28	9	-19	0	$3,300	$0
+Pittsburgh Steelers (PIT - DST)	Sun 1:00PM	CIN	Even	N/A	PIT 0		17	16	-1	0	$2,900	$0
+New York Giants (NYG - DST)	Sun 1:00PM	NO	NYG (-5)	52.5	NYG 29		16	22	6	0	$2,600	$0
+Miami Dolphins (MIA - DST)	Sun 1:00PM	@NE	MIA (+6.5)	41.5	MIA 18		6	24	18	0	$2,500	$0
+San Diego Chargers (SD - DST)	Sun 4:25PM	JAC	SD (-3)	48	SD 26		7	25	18	0	$2,500	$0
+Cleveland Browns (CLE - DST)	Sun 1:00PM	BAL	CLE (+7)	43	CLE 18		5	23	18	0	$2,500	$0
+Baltimore Ravens (BAL - DST)	Sun 1:00PM	@CLE	BAL (-7)	43	BAL 25		4	14	10	0	$3,000	$0
+Buffalo Bills (BUF - DST)	Thu 8:25PM	NYJ	Even	40	BUF 20		2	12	10	0	$3,100	$0
+New England Patriots (NE - DST)	Sun 1:00PM	MIA	NE (-6.5)	41.5	NE 24		3	13	10	0	$3,000	$0
+Dallas Cowboys (DAL - DST)	Sun 1:00PM	@WAS	Even	N/A	DAL 0		8	26	18	0	$2,400	$0
+Tennessee Titans (TEN - DST)	Sun 1:00PM	@DET	TEN (+5.5)	47	TEN 21		9	31	22	0	$2,200	$0
+Atlanta Falcons (ATL - DST)	Sun 4:25PM	@OAK	ATL (+4.5)	49	ATL 22		14	28	14	0	$2,300	$0
+Chicago Bears (CHI - DST)	Mon 8:30PM	PHI	CHI (-3)	42.5	CHI 23		15	15	0	0	$2,900	$0
+San Francisco 49ers (SF - DST)	Sun 1:00PM	@CAR	Even	N/A	SF 0		13	27	14	0	$2,400	$0
+New Orleans Saints (NO - DST)	Sun 1:00PM	@NYG	NO (+5)	52.5	NO 24		12	29	17	0	$2,300	$0
+Tampa Bay Buccaneers (TB - DST)	Sun 4:05PM	@ARI	TB (+6.5)	50	TB 22		10	32	22	0	$2,200	$0
+Jacksonville Jaguars (JAC - DST)	Sun 4:25PM	@SD	JAC (+3)	48	JAC 23		11	30	19	0	$2,300	$0
+Kansas City Chiefs (KC - DST)	Sun 1:00PM	@HOU	KC (+2)	43.5	KC 21		1	11	10	0	$3,200	$0

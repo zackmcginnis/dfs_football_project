@@ -1,43 +1,51 @@
 <ion-view title="Wide Receivers">
   <ion-content>
-<div ng-controller="WrCtrl">
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12">
-      <div class="table-responsive">
-        <table summary="This table shows how to create responsive tables using Bootstrap's default functionality" class="table table-bordered table-hover">
+<section ng-app="app" ng-controller="WrCtrl">
+  <span class="label">Ordered By: {{orderByField}}, Reverse Sort: {{reverseSort}}</span><br><br>
+  <table class="table table-bordered">
           <thead>
             <tr>
-              <th>Player</th>
+              <th>Player
+              </th>
               <th>Kickoff</th>
               <th>Opponent</th>
               <th>Spread</th>
-              <th>Over/Under</th>
-              <th>Predicted Score</th>
-             
+              <th>Over/Under</th>       
               <th>Projected Rank</th>
               <th>Salary Rank</th>
-              <th>Difference</th>
-              <th>Projected Points</th>
-              <th>Salary</th>
+              <th>Difference</th>    
+              <th>
+                <a href="#" ng-click="orderByField='Salary'; reverseSort = !reverseSort">
+                  Salary <span ng-show="orderByField == 'Salary'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+                  </a>
+              </th>
               <th>Cost Per Point</th>
+              <th>                  
+                  <a href="#" ng-click="orderByField='ProjectedPoints'; reverseSort = !reverseSort">
+                  Projected Points <span ng-show="orderByField == 'ProjectedPoints'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+                  </a>
+              </th>
+              <th>                  
+                  <a href="#" ng-click="orderByField='ZacksProjection'; reverseSort = !reverseSort">
+                  Zack's Projection <span ng-show="orderByField == 'ZacksProjection'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
+                  </a>
+              </th>
             </tr>
           </thead>
           <tbody>
-            <tr ng-repeat="player in data.wr">
+            <tr ng-repeat="player in data.wr|orderBy:orderByField:reverseSort">
               <td>{{player.Player}}</td>
               <td>{{player.Kickoff}}</td>
               <td>{{player.Opponent}}</td>
               <td>{{player.Spread}}</td>
-              <td>{{player.OverUnder}}</td>
-              <td>{{player.PredictedScore}}</td>  
-        
+              <td>{{player.OverUnder}}</td>            
               <td>{{player.ProjectedRank}}</td>
               <td>{{player.SalaryRank}}</td>
               <td>{{player.Difference}}</td>
-              <td>{{player.ProjectedPoints}}</td>
               <td>{{player.Salary}}</td>
-              <td>{{player.CostPerPoint}}</td>          
+              <td>{{player.CostPerPoint}}</td> 
+              <td>{{player.ProjectedPoints}}</td>
+              <td>{{player.ZacksProjection}}</td>         
             </tr>
           </tbody>       
           <tfoot>
@@ -45,12 +53,9 @@
           
             </tr>
           </tfoot>
-        </table>
-      </div><!--end of .table-responsive-->
-    </div>
-  </div>
-</div>
-</div>
+
+</table>
+</section>
   </ion-content>
 </ion-view>
 

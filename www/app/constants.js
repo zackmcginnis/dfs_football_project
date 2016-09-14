@@ -2,6 +2,6 @@
   'use strict';
   angular.module('app')
     .constant('C', {
-      backendUrl: 'data'
+      backendUrl: 'https://www.fantasypros.com'
     });
 })();

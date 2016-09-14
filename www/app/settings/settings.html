@@ -1,9 +1,16 @@
 <ion-view title="Settings">
   <ion-content>
     <div class="list">
+      <button class="button button-icon ion-ios-refresh-outline larger" ng-click="getdata()"></button>
+         Update Player Data (If Available)
+          <div class="track">
+            <div class="handle"></div>
+          </div>
+     
+      </div>
       <div class="item item-toggle"> Setting 1
         <label class="toggle toggle-positive">
-          <input type="checkbox" ng-model="data.settings.setting1">
+          <input type="checkbox" ng-click="data.settings.setting1">
           <div class="track">
             <div class="handle"></div>
           </div>

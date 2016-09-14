@@ -1,14 +1,7 @@
 <ion-view title="Positions">
 <!-- div ng-if="data.main.length > 0"   -->
-  <class="bar bar-subheader item-input-inset" ng-class="{'bar-positive': search.length > 0}">
-    <label class="item-input-wrapper">
-      <i class="icon ion-search placeholder-icon"></i>
-      <input type="search" placeholder="Search ..." ng-model="search">
-    </label>
-    <button class="button button-clear" ng-click="search=''">Cancel</button>
-  </div>
-  <ion-content class="has-subheader">
 
+  <ion-content class="has-header has-subheader">
   <!--
     <div ng-if="data.main.length === 0" class="empty-msg">Nothing</div>
     <div ng-if="data.main.length > 0" class="list">
@@ -19,30 +12,29 @@
       "\"Position\""
 -->
 
-     <div ui-sref="app.qb({id: pos.id})">Quarterbacks
+       <div class="list card">
+            <a ui-sref="app.qb({id: pos.id})" class="item item-icon-left">
+                <i class="icon ion-ios-americanfootball"></i>
+                Quarterbacks
+            </a>
+            <a ui-sref="app.rb({id: pos.id})" class="item item-icon-left">
+                <i class="icon ion-ios-americanfootball"></i>
+                Running Backs
+            </a>
+            <a ui-sref="app.wr({id: pos.id})" class="item item-icon-left">
+                <i class="icon ion-ios-americanfootball"></i>
+                Wide Receivers
+            </a>
+            <a ui-sref="app.te({id: pos.id})" class="item item-icon-left">
+                <i class="icon ion-ios-americanfootball"></i>
+                Tight Ends 
+            </a>
+            <a ui-sref="app.def({id: pos.id})" class="item item-icon-left">
+                <i class="icon ion-ios-americanfootball"></i>
+                Defense
+            </a>
+        </div>
 
-    </div>
-
-     <div ui-sref="app.rb({id: pos.id})">Running Backs
-
-    </div>
-
-     <div ui-sref="app.wr({id: pos.id})">Wide Receivers
-
-    </div>
-
-     <div ui-sref="app.te({id: pos.id})">Tight Ends
-
-    </div>
-
-     <div ui-sref="app.def({id: pos.id})">Defense
-
-    </div>   
-
-        <!--<img ng-src="{{pos.avatar}}"> 
-        <h2>{{players.Name}}</h2>
-        <p>{{players.Position}}</p>
-        -->
     </div>
   </ion-content>
 </ion-view>
