@@ -25,6 +25,10 @@
       var lines=csv.data.split("\n");
       //console.log("lines", lines);
       lines.shift();
+      lines.shift();
+      lines.shift();
+      lines.shift();
+      //lines.shift();
       var obj = [];
 
       angular.forEach(lines, function(val) {
@@ -50,46 +54,7 @@
       return obj; //JavaScript object
       //return JSON.stringify(result); //JSON
     };
-/*
-    function scrape(position) {//get request to fantasypros website
-      var urlBase = 'https://www.fantasypros.com';
-
-      var headers = {
-          'Access-Control-Allow-Origin' : '*',
-          'Access-Control-Allow-Methods' : 'POST, GET, OPTIONS, PUT',
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-      };
-
-      return $http({
-        method: 'GET',
-        heaters: headers,
-        url: urlBase+position
-      }).then(function successCallback(response) {
-        console.log("http success");
-        //console.log(response.data);
-        var xls = response.data;
-        return xls;
-
-      }).then(function(xls) {
-        //convert(xls);
-        var json = csvToJson(xls);
-        console.log(json);
-
-        return json;
-
-      //}).then(function(json) {
-        //save(json);
-
-      });
-
-      .error(function errorCallback(response) {
-          console.log("http fail");
-          console.log(response);
-
-      });
-*/
-    };
+    
 
     function getQb(){ //from DK csv
       return $http.get(C.backendUrl+"/nfl/draftkings-cheatsheet.php?position=QB&export=xls").then(function(res){
@@ -168,7 +133,7 @@
     }
 
     function getDef(){ //from DK csv
-      return $http.get(C.backendUrl+"/nfl/draftkings-cheatsheet.php?position=RB&export=xls").then(function(res){
+      return $http.get(C.backendUrl+"/nfl/draftkings-cheatsheet.php?position=DST&export=xls").then(function(res){
         var all = csvToJson(res);
         var predict;
         for (var i=0; i < all.length; i++){
