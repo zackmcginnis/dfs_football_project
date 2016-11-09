@@ -1,61 +1,20 @@
 <ion-view title="Wide Receivers">
   <ion-content>
-<section ng-app="app" ng-controller="WrCtrl">
-  <span class="label">Ordered By: {{orderByField}}, Reverse Sort: {{reverseSort}}</span><br><br>
-  <table class="table table-bordered">
-          <thead>
-            <tr>
-              <th>Player
-              </th>
-              <th>Kickoff</th>
-              <th>Opponent</th>
-              <th>Spread</th>
-              <th>Over/Under</th>       
-              <th>Projected Rank</th>
-              <th>Salary Rank</th>
-              <th>Difference</th>    
-              <th>
-                <a href="#" ng-click="orderByField='Salary'; reverseSort = !reverseSort">
-                  Salary <span ng-show="orderByField == 'Salary'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
-                  </a>
-              </th>
-              <th>Cost Per Point</th>
-              <th>                  
-                  <a href="#" ng-click="orderByField='ProjectedPoints'; reverseSort = !reverseSort">
-                  Projected Points <span ng-show="orderByField == 'ProjectedPoints'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
-                  </a>
-              </th>
-              <th>                  
-                  <a href="#" ng-click="orderByField='ZacksProjection'; reverseSort = !reverseSort">
-                  Zack's Projection <span ng-show="orderByField == 'ZacksProjection'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span>
-                  </a>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr ng-repeat="player in data.wr|orderBy:orderByField:reverseSort">
-              <td>{{player.Player}}</td>
-              <td>{{player.Kickoff}}</td>
-              <td>{{player.Opponent}}</td>
-              <td>{{player.Spread}}</td>
-              <td>{{player.OverUnder}}</td>            
-              <td>{{player.ProjectedRank}}</td>
-              <td>{{player.SalaryRank}}</td>
-              <td>{{player.Difference}}</td>
-              <td>{{player.Salary}}</td>
-              <td>{{player.CostPerPoint}}</td> 
-              <td>{{player.ProjectedPoints}}</td>
-              <td>{{player.ZacksProjection}}</td>         
-            </tr>
-          </tbody>       
-          <tfoot>
-            <tr>
-          
-            </tr>
-          </tfoot>
+  <div ng-app="app" ng-controller="WrCtrl">
+      <ion-scroll direction="x" class="wide-as-needed">
+      <dtable options="options" rows="data.wr" class="material"></dtable>
 
-</table>
-</section>
+    <div class="pinbox">
+      <p>Options</p>
+      <label class="dt-checkbox">
+      <input type="checkbox" 
+             ng-checked="isPinned()"
+             ng-click="togglePin(column)">
+         Pin 'Player'
+    </label>
+    </div>
+
+      </ion-scroll>
+  </div>
   </ion-content>
 </ion-view>
-

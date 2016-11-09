@@ -28,7 +28,7 @@
       lines.shift();
       lines.shift();
       lines.shift();
-      //lines.shift();
+      lines.shift();
       var obj = [];
 
       angular.forEach(lines, function(val) {
